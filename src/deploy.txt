@@ -1,0 +1,5 @@
+#!/bin/tcsh -f
+
+jekyll build --config _config.yml,_config-web.yml
+
+rsync -avr --size-only --delete --progress --exclude secrets.php --exclude deploy.txt --exclude static/ _site/* /Volumes/lsimon

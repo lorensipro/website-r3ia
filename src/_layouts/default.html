@@ -1,0 +1,28 @@
+{% include head.html %}
+
+{% if page.headertitle %}
+    <header>
+      <h1>{{ page.headertitle }}</h1>
+ {% if page.description %}
+       <h2 class="gray">{{ page.description }}</h2> 
+ {% endif %}
+    </header>
+{% endif %}
+
+
+    <div id="pageflexcontainer">
+    
+    {% include column-news.html %}
+
+    <main id="mainblock" style="flex-basis:100%;flex-grow:1">
+      {{ content }}
+    </main>
+
+    <div id="space"> 
+    </div>
+
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

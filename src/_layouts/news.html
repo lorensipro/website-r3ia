@@ -1,0 +1,71 @@
+---
+isanews: true
+language: en
+---
+{% include head.html %}
+
+<header>
+    <h1>{{ page.title }}</h1>
+{% if page.date %}
+  {% if page.language == "fr" %}
+    {% capture i18n_date %}
+    {{ page.date | date: "%-d" }}
+    {% assign m = page.date | date: "%-m" | minus: 1 %}
+    {{ site.data.fr.months[m] }}
+    {{ page.date | date: "%Y" }}
+    {% endcapture %}
+  {% else %}
+    {% assign i18n_date = page.date | date_to_long_string %}
+  {% endif %}
+  <h2 class="gray">
+    {{ i18n_date }}
+  </h2>
+{% endif %}
+  </header>
+
+
+    <div id="pageflexcontainer">
+    
+    {% include column-news.html %}
+
+    <main id="mainblock" style="flex-basis:100%;flex-grow:1">
+{% if page.image %}
+<p style="text-align:center">
+<img src="{{site.url}}{{ site.baseurl }}/assets/img-multisize/medium/{{page.image}}" width="600px"/>
+</p>
+{% endif %}
+
+      {{ content }}
+    
+
+    {% if page.last-modified-date %}
+    {% if page.language == "fr" %}
+      {% capture i18n_mdate %}
+      {{ page.last-modified-date | date: "%-d" }}
+      {% assign m = page.last-modified-date | date: "%-m" | minus: 1 %}
+      {{ site.data.fr.months[m] }}
+      {{ page.last-modified-date | date: "%Y" }}
+      {% endcapture %}
+      <div style="padding-top:2em;text-align:center; font-style:italic;font-size:90%;">(Dernière Modification: {{ i18n_mdate }})</div>
+    {% else %}
+      {% assign i18n_mdate = page.last-modified-date | date_to_long_string %}
+      <div style="padding-top:2em;text-align:center; font-style:italic;font-size:90%;">(Last Modified date: {{ i18n_mdate }})</div>
+    {% endif %}
+    
+    {% endif %}
+    </main>
+
+    <div id="space"> 
+    </div>
+
+    </div>
+
+    {% if page.language == "fr" %}
+    <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/news/">(liste de toutes les brèves)</a></div>
+    {% else %}
+    <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/news/">(list of all news)</a></div>
+    {% endif %}
+
+    {% include footer.html %}
+  </body>
+</html>

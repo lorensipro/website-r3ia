@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>{{ page.title }} | {{ site.name[page.language] }}</title>
+    <meta name="author" content="R3IA - See Github project - Laurent Simon">
+{% if page.language == "fr" %}
+    <meta name="description" content="Site Web du R3IA, Réseau Régional de Recherche en Intelligence Artificielle" />
+    <meta name="keywords" content="R3IA, Nouvelle Aquitaine, Recherche, Intelligence Artificielle, Réseau de Recherche" />
+{% else %}
+    <meta name="description" content="Web site of the R3IA scientific regional network on artificial intelligence" />
+    <meta name="keywords" content="R3IA, Nouvelle Aquitaine, Research, Artificial Intelligence, Résearch Network" />
+{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{site.url}}{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{site.url}}{{ site.baseurl }}/assets/css/font-awesome.min.css">
+  
+  {% comment %}
+  <style>
+    nav .active {
+      background-color: rgba(255, 176, 175, 0.38);
+    }
+  </style>
+  {% endcomment %}
+  </head>
+
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("thetopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
+  <body>
+    {% assign lasturl = page.handle | split: "/" | slice: -1, 1 %}
+    <nav id="thetopnav" class="topnav">
+
+         {% if page.language == "en" %}
+          <a href="{{site.url}}{{ site.baseurl }}/en/" style="font-size:120%"><i class="fa fa-university"></i></a>
+          {% else %}
+          <a href="{{site.url}}{{ site.baseurl }}/" style="font-size:120%"><i class="fa fa-university"></i></a>
+          {% endif %}
+      {% for p in site.data.menus %}
+        {% assign lasthandle = p.file | split: "/" | slice: -1, 1 %}
+         {% if page.language == "en" %}
+          <a {% if lasturl == lasthandle %} class="active" {% endif %} href="{{site.url}}{{ site.baseurl }}/en/{{ p.file }}">
+            {% if p.icon %}<i class="fa fa-{{p.icon}}"></i>{% endif %}
+            {{ p[page.language] }}</a>
+          {% else %}
+          <a {% if lasturl == lasthandle %} class="active" {% endif %} href="{{site.url}}{{ site.baseurl }}/{{ p.file }}">
+            {% if p.icon %}<i class="fa fa-{{p.icon}}"></i>{% endif %}
+            {{ p[page.language] }}</a>
+          {% endif %}
+      {% endfor %}
+      
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <nav class="language-switcher">
+      {% if page.name contains "index" %}
+        <a class="en" href="{{site.url}}{{ site.baseurl }}/">FR</a>
+        <a class="fr" href="{{site.url}}{{ site.baseurl | append: "/en" }}">EN</a>
+      {% else %}
+        <a class="en" href="{{site.url}}{{ site.baseurl | append: page.handle }}">FR</a>
+        <a class="fr" href="{{site.url}}{{ site.baseurl | append: "/en" | append: page.handle }}">EN</a>
+      {% endif %}
+    </nav>

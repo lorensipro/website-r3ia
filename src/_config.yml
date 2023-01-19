@@ -1,0 +1,27 @@
+include: [.htaccess, .htpasswd]
+
+name: 
+  en: Regional Research Network in A.I.
+  fr: Réseau Régional de Recherche en I.A. 
+description: 
+  en: 
+  fr: 
+
+exclude: [README.md deploy.txt LICENSE]
+permalink: pretty
+
+url: http://128.0.0.1:4000
+baseurl: /
+
+production: 0
+
+mini_magick:
+  thumbnail:
+    source: assets/img-multisize
+    destination: assets/img-multisize/thumbnail
+    resize: "120x120"
+  medium:
+    source: assets/img-multisize
+    destination: assets/img-multisize/medium
+    resize: "600x400"
+

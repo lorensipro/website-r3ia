@@ -1,0 +1,19 @@
+
+    <footer>
+      <small>
+{% if page.language == "en" %}
+        This is a hand-crafted page  designed for the R3IA, based on Jekyll with the help of the open-source project by {{ "[mrzool](http://mrzool.cc)" | markdownify | remove: '<p>' | remove: '</p>' }}
+        </br>
+        All the modifications made by Laurent S. ((C) {{ 'now' | date: "%Y" }})
+      </br> </br>
+       <strong>There are no cookies, no traces at all in this web site.</strong> 
+{% else %}
+        Page web fabriquée (avec amour) pour le R3IA, basée sur Jekyll et le code "ouvert" de {{ "[mrzool](http://mrzool.cc)" | markdownify | remove: '<p>' | remove: '</p>' }}
+        </br>
+        Toutes les modifications ont été faites par Laurent S. ((C) {{ 'now' | date: "%Y" }})
+      </br></br>
+       <strong>Il n'y a pas un seul cookie ni aucune trace de votre passage à revendre. </strong>
+       <br/>
+{% endif %}
+ </small>
+    </footer>

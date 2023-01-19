@@ -1,0 +1,86 @@
+
+  <div id="lastnews">
+      {% if page.language=="en" %}
+      <h2>Most recent news</h2>
+      <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/news/">(list of all news)</a></div>
+      {% endif %}
+      {% if page.language=="fr" %}
+      <h2>Nouvelles les plus récentes</h2>
+      <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/fr/news/">(Liste de toutes les brèves)</a></div>
+      {% endif %}
+
+      {% assign navposts = ''|split:''%}
+      {% assign navpoststop = ''|split:''%}
+      {% assign nbnavpoststop = 0 %}
+      {% for post in site.posts %}
+      {% if post.language == page.language and post.tags contains "global" %}
+      {% if post.tags contains "top" %}
+        {% assign navpoststop = navpoststop|push:post%}
+        {% assign nbnavpoststop = nbnavpoststop | plus:1 %}
+      {% else %}
+        {% assign navposts = navposts|push:post%}
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+      
+      {% assign posts = navpoststop | sort: 'date' | reverse %}
+
+      {% assign maxposts = 5 %}
+      {% for post in posts | limit:maxposts%}
+        <hr style="color:lightblue"/>
+        <p>
+            <a href="{{site.url}}{{ site.baseurl }}{{ post.url }}" style="text-align:center; display:block;font-size:120%">{{ post.title }}</a></br>
+            {% if post.image %}
+            <img src="{{site.url}}{{ site.baseurl }}/assets/img-multisize/thumbnail/{{post.image}}" width="100px"/>
+            {% endif %}
+        <p class = "newsdate"> 
+          {% if post.date %}
+          {% if post.language == "fr" %}
+            {% capture i18n_date %}
+            {{ post.date | date: "%-d" }}
+            {% assign m = post.date | date: "%-m" | minus: 1 %}
+            {{ site.data.fr.months[m] }}
+            {{ post.date | date: "%Y" }}
+            {% endcapture %}
+          {% else %}
+            {% assign i18n_date = post.date | date_to_long_string %}
+          {% endif %}
+          ({{ i18n_date | strip }})
+        </p>
+            <p style="font-size:90%"> {{ post.content | strip_html | truncatewords: 30 }}</p>
+        </p>
+          {% endif %}
+        
+        {% endfor %}
+      
+      {% assign posts = navposts | sort: 'date' | reverse %}
+      {% assign maxposts = 5 | minus: nbnavpoststop | max: 0 %}
+      {% for post in posts | limit:maxposts%}
+        <hr style="color:lightblue"/>
+        <p>
+            <a href="{{site.url}}{{ site.baseurl }}{{ post.url }}" style="text-align:center; display:block;font-size:120%">{{ post.title }}</a></br>
+            {% if post.image %}
+            <img src="{{site.url}}{{ site.baseurl }}/assets/img-multisize/thumbnail/{{post.image}}" width="100px"/>
+            {% endif %}
+        <p class = "newsdate"> 
+          {% if post.date %}
+          {% if post.language == "fr" %}
+            {% capture i18n_date %}
+            {{ post.date | date: "%-d" }}
+            {% assign m = post.date | date: "%-m" | minus: 1 %}
+            {{ site.data.fr.months[m] }}
+            {{ post.date | date: "%Y" }}
+            {% endcapture %}
+          {% else %}
+            {% assign i18n_date = post.date | date_to_long_string %}
+          {% endif %}
+          ({{ i18n_date | strip }})
+        </p>
+            <p style="font-size:90%"> {{ post.content | strip_html | truncatewords: 30 }}</p>
+        </p>
+          {% endif %}
+        
+        {% endfor %}
+      </ul>
+
+    </div>
