@@ -4,8 +4,8 @@ name:
   en: Regional Research Network in A.I.
   fr: Réseau Régional de Recherche en I.A. 
 description: 
-  en: 
-  fr: 
+  fr: Site web institutionnel du réseau régional de recherche en intelligence artificielle 
+  fr: official website of the regional network of artificial intelligence research 
 
 exclude: [README.md deploy.txt LICENSE]
 permalink: pretty

@@ -2,4 +2,4 @@
 
 jekyll build --config _config.yml,_config-web.yml
 
-rsync -avr --size-only --delete --progress --exclude secrets.php --exclude deploy.txt --exclude static/ _site/* /Volumes/lsimon
+rsync -avr --size-only --delete --progress --exclude secrets.php --exclude deploy.txt --exclude static/ _site/* 51.178.55.9:/var/www/r3ia/html
