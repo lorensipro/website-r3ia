@@ -2,11 +2,11 @@
   <div id="lastnews">
       {% if page.language=="en" %}
       <h2>Most recent news</h2>
-      <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/news/">(list of all news)</a></div>
+      <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/en/news/">(list of all news)</a></div>
       {% endif %}
       {% if page.language=="fr" %}
       <h2>Nouvelles les plus récentes</h2>
-      <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/fr/news/">(Liste de toutes les brèves)</a></div>
+      <div style="text-align:center"><a href="{{site.url}}{{ site.baseurl}}/news/">(Liste de toutes les brèves)</a></div>
       {% endif %}
 
       {% assign navposts = ''|split:''%}

@@ -44,9 +44,9 @@
     <nav id="thetopnav" class="topnav">
 
          {% if page.language == "en" %}
-          <a href="{{site.url}}{{ site.baseurl }}/en/" style="font-size:120%"><i class="fa fa-university"></i></a>
+          <a href="{{site.url}}{{ site.baseurl }}/en/" style="font-size:110%;background-color: #FFF;"><img id="headerlogo" src="{{site.url}}{{ site.baseurl }}/assets/img/logo-r3ia-small.png"/></a>
           {% else %}
-          <a href="{{site.url}}{{ site.baseurl }}/" style="font-size:120%"><i class="fa fa-university"></i></a>
+          <a href="{{site.url}}{{ site.baseurl }}/" style="font-size:120%; background-color: #FFF;"><img id="headerlogo" src="{{site.url}}{{ site.baseurl }}/assets/img/logo-r3ia-small.png"/></a>
           {% endif %}
       {% for p in site.data.menus %}
         {% assign lasthandle = p.file | split: "/" | slice: -1, 1 %}
@@ -67,10 +67,10 @@
     </nav>
     <nav class="language-switcher">
       {% if page.name contains "index" %}
-        <a class="en" href="{{site.url}}{{ site.baseurl }}/">FR</a>
-        <a class="fr" href="{{site.url}}{{ site.baseurl | append: "/en" }}">EN</a>
+        <a class="fr" href="{{site.url}}{{ site.baseurl }}/">FR</a>
+        <a class="en" href="{{site.url}}{{ site.baseurl | append: "/en" }}">EN</a>
       {% else %}
-        <a class="en" href="{{site.url}}{{ site.baseurl | append: page.handle }}">FR</a>
-        <a class="fr" href="{{site.url}}{{ site.baseurl | append: "/en" | append: page.handle }}">EN</a>
+        <a class="fr" href="{{site.url}}{{ site.baseurl | append: page.handle }}">FR</a>
+        <a class="en" href="{{site.url}}{{ site.baseurl | append: "/en" | append: page.handle }}">EN</a>
       {% endif %}
     </nav>

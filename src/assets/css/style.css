@@ -92,7 +92,10 @@ html {
 }
 
 body {
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
     font-weight: 400;
     line-height: 1.45;
     text-align: left 
@@ -105,9 +108,14 @@ body p img {
 }
 
 header {
-    margin-top: 5em
+    margin-top: 5em;
 }
 
+#headerlogo {
+    max-width: 7em;
+    max-height: 1.5em;
+    vertical-align: middle;
+}
 nav a {
     margin-right: .5em;
     padding: .5em;
@@ -176,10 +184,14 @@ h1 {
     font-size: 3rem;
     line-height: 1.2;
     margin-top: 0;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+    /*text-transform: uppercase; */
+    /*letter-spacing: .1em;*/
+    color: #3a414e;
 }
 
+h2 {
+    font-size: 1.8rem;
+}
 @media screen and (min-width:640px) {
     header h1 {
         padding-left:50px;

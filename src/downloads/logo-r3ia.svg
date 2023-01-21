@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 592 214" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-45.4793,-39.7703)">
+        <g transform="matrix(1,0,0,1,-103.732,-384.323)">
+            <g transform="matrix(0.831049,0,0,0.807756,35.9446,100.467)">
+                <g transform="matrix(2.11989,0,0,0.81963,-3.46559,367.665)">
+                    <path d="M401.75,120.846C401.75,76.36 388.177,40.242 371.459,40.242L96.219,40.242C79.501,40.242 65.928,76.36 65.928,120.846L65.928,282.055C65.928,326.541 79.501,362.659 96.219,362.659L371.459,362.659C388.177,362.659 401.75,326.541 401.75,282.055L401.75,120.846Z" style="fill:rgb(219,55,73);"/>
+                </g>
+                <g transform="matrix(0.660669,0,0,0.621142,174.117,618.955)">
+                    <text x="0px" y="0px" style="font-family:'Futura-Bold', 'Futura', sans-serif;font-weight:700;font-size:368px;fill:white;">R3IA</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
