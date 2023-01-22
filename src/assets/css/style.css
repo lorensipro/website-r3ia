@@ -177,7 +177,6 @@ h1,h2,h3,h4,h5 {
     line-height: 1.1;
     text-align: center;
 }
-
 h1 {
     margin: 1.414em 0 .5em;
     font-weight: 100;
@@ -192,6 +191,11 @@ h1 {
 h2 {
     font-size: 1.8rem;
 }
+
+#lastnews h2 {
+    font-size: 1.5rem;
+}
+
 @media screen and (min-width:640px) {
     header h1 {
         padding-left:50px;
@@ -253,7 +257,7 @@ footer {
 }
 
 #lastnews {
-    visibility: show;
+    visibility: visible;
     padding-top:3em;
     background-color:#FAFAFA;
     flex-basis:260px;
@@ -271,8 +275,20 @@ footer {
     padding-left: 10px;
 }
 
+@media screen and (min-width:640px) {
+    #mainblock {
+        padding-left: 18px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    #mainblock {
+        padding-left: 30px;
+    }
+}
+
 #space {
-    visibility: show;
+    visibility: visible;
     flex-basis:260px;
     flex-grow:0;
     font-size:80%
