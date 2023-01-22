@@ -5,7 +5,7 @@ language: fr
 handle: /who
 
 headertitle: Réseau Régional de Recherche en Intelligence Artificielle
-description: Qui sommes-nous ?
+description: (Qui sommes-nous ?)
 ---
 
 ## Structuration du R3IA

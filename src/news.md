@@ -5,7 +5,7 @@ language: fr
 handle: /news
 
 headertitle: Toute l'actualité 
-description: (Sur une même page)
+description: (Passée et à venir)
 ---
 
 <p>Vous avez une actualité à nous signaler ? Contactez-nous par mail à l'adresse <a href="mailto:r3ia-contact@inria.fr">r3ia-contact@inria.fr</a>.</p>
