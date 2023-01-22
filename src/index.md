@@ -20,7 +20,7 @@ Un ensemble d'acteurs régionaux a proposé à la Région la création d'un rés
 
 ![Des élèves le premier jour de AI4Industry, soutenu par le R3IA]({{site.url}}{{ site.baseurl }}/assets/img-multisize/medium/ai4industry-2023-banner.jpg)
 
-Pour en savoir plus sur les objectifs visés et le périmètre initial du réseau, consulter le texte soumis en mai 2021 à la Commission Permanente de la Région Nouvelle-Aquitaine.
+Pour en savoir plus sur les objectifs visés et le périmètre initial du réseau, [consulter le texte soumis en mai 2021]({{site.url}}{{ site.baseurl }}/downloads/R3IA.pdf) à la Commission Permanente de la Région Nouvelle-Aquitaine.
 
 La liste de diffusion `r3ia-info` ([inscription](https://sympa.inria.fr/sympa/subscribe/r3ia-info), [désinscription](https://sympa.inria.fr/sympa/signoff/r3ia-info)) permet d'échanger avec l'ensemble des personnes intéressées par la constitution de ce réseau.
 
