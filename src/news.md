@@ -37,13 +37,14 @@ description: (Passée et à venir)
 
 <p><strong>Nouvelles plus anciennes</strong></p>
 
-<p>Juillet 2023 - A la <a href="https://2023.robocup.org/">RoboCup 2023</a>, il sera bien sur question d'IA. Détails à venir 8-)</p>
 <p>02/03/2023 — <a href="https://www.dataquitaine.com/">Sixième journée Dataquitaine</a>.</p>
 
-<p>09/12/2022 - En partenariat avec le festival <a href="https://hypermondes.fr">Hypermondes</a>, le R3IA organise un débat sur le thème "Pourquoi l'IA est-elle aussi méchante dans les livres, les films et le jeux ?”</p>
 <p>03/12/2022 — Nouveau <a href="https://iapau.org/events/data_challenge_decembre_2022/">data Challenge</a> organisé par <a href="http://www.iapau.fr/">IAPAU</a>.</p>
+
 <p>Un comité de pilotage du réseau est en cours de définition. Contactez <a href="https://www.labri.fr/perso/lsimon/">Laurent Simon</a> pour en savoir plus.</p>
+
 <p><strong>Passées :</strong></p>
+
 <p>10/11/2022 - Séminaire "<a href="https://www.u-bordeaux-montaigne.fr/fr/actualites/recherche/impacts-societaux-de-l-intelligence-artificielle.html">Impacts sociétaux de l'intelligence artificielle</a>" organisé en partenariat avec le réseau <a href="https://francophonea.fr">FrancophoNéA</a>.</p>
 <p>18/10/2022 - <a href="https://id-ai.eu">Séminaire franco-allemand sur l'IA</a> à Bordeaux, en partenariat avec Inria et le <a href="https://www.dfki.de/en/web/">DFKI</a>.</p>
 <p>13/10/2022 - Nouveau format pour <a href="https://forum.naia.io/index">NAIA.R</a>, le forum Néo-Aquitain sur l’Intelligence Artificielle et la Robotique.</p>

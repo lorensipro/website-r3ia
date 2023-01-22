@@ -1,5 +1,5 @@
 #- {file: research, en: Research, fr: Recherche}
-- {file: who, en: "Who are we?", fr: "Qui sommes nous ?", icon: file-text-o}
-- {file: news, en: News, fr: Actualités, icon: graduation-cap}
+- {file: who, en: "Who are we?", fr: "Qui sommes nous ?", icon: users}
+- {file: news, en: News, fr: Actualités, icon: rss}
 - {file: contact, en: "Contact", fr: "Contact", icon: phone}
 
