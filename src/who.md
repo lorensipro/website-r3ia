@@ -10,7 +10,7 @@ description: (Qui sommes-nous ?)
 
 ## Structuration du R3IA
 
-Le R3IA est piloté depuis 2023 par **Laurent Simon** (LaBRI, Bordeaux)
+Le R3IA est piloté depuis 2023 par **Laurent Simon** (LaBRI, Bordeaux). Avant cela, c'est **Nicolas Roussel** (INRIA, Bordeaux) qui en était l'animateur.
 
 La structuration du réseau s'articule autour d'un comité de pilotage qui l'anime et se réunit régulièrement :
 
@@ -51,10 +51,9 @@ La structuration du réseau s'articule autour d'un comité de pilotage qui l'ani
 
 L'initiative a été coordonnéee en 2021-2022 par Inria et piloté par **Nicolas Roussel** (INRIA héberge toujours les listes de diffusion associées (basées sur <a href="https://www.sympa.org">Sympa</a>) au réseau). Depuis 2023, le réseau est piloté par **Laurent Simon** avec l'aide d'un comité de pilotage (voir ci-dessus) représentant la variété des sites et thématiques de l'I.A. en Nouvelle Aquitaine.
 
+<p>Cette initiative se veut dynamique. Elle peut être quittée ou rejointe à tout moment par les acteurs régionaux de la recherche à titre individuel ou institutionnel. Toutes les contributions sont les bienvenues.</p>
+
 Le site web est programmé en Jekyll et son code (à l'image de la philosophie du R3IA) est ouvert [via son dépôt github public](https://github.com/lorensipro/website-r3ia). N'hésitez pas à soumettre des "**pull request**" si vous souhaitez annoncer des évènements par exemple. Vous pouvez également contacter **Laurent Simon** pour faire remonter des informations.
-
-
-<p>Cette initiative se veut dynamique. Elle peut être quittée ou rejointe à tout moment par les acteurs régionaux de la recherche à titre individuel ou institutionnel.</p>
 
 <p>La liste de diffusion <code>r3ia-info</code> (<a href="https://sympa.inria.fr/sympa/subscribe/r3ia-info">inscription</a>, <a href="https://sympa.inria.fr/sympa/signoff/r3ia-info">désinscription</a>) permet d'échanger avec l'ensemble des personnes intéressées.</p>
 

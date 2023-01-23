@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2016 Mattia Tezzele
+- Jekyll Skeleton based on Mattia Tezzele (2016) code to handle multi language support
+- Modifications made by Laurent Simon (2022-2023) for the R3IA network
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
