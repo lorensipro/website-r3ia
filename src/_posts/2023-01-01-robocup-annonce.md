@@ -1,6 +1,6 @@
 ---
 layout: news
-title: La Robocup en 2023 à Bordeaux
+title: La Robocup en 2023 à Bordeaux (Annonce)
 tags: global top  
 image: robocup-23-humanoid.jpg
 language: fr 

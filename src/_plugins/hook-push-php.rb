@@ -6,6 +6,5 @@ Jekyll::Hooks.register :site, :post_write do |site|
     site.pages do |page|
       puts page.data['title']
     end 
-    puts "titi"
   end
 
